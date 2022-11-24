@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 107, 107);
+}
+
+
+.container{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(134, 34, 34);
+    
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.blocks{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    /* From https://css.glass */
+background: rgba(31, 255, 3, 0.94);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+border: 1px solid rgba(31, 255, 3, 0.91);
+    /* background-image: url(./back.png);
+    background-size:     cover;                      /* <------ */
+    /* background-repeat:   no-repeat;
+    background-position: center center;              
+     */ 
+}
+
+.blocks:nth-child(3n+2){
+   /* From https://css.glass */
+background: rgba(255, 0, 228, 0.94);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+border: 1px solid rgba(255, 0, 228, 0.91);
+/* background-image: url(./bomb.png); */
+/* background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;                */
+
+}
+
+.blocks:nth-child(3n+3){
+    /* From https://css.glass */
+background: rgba(255, 248, 1, 0.94);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+border: 1px solid rgba(255, 248, 1, 0.91);
+/* background-image: url(./legs.png);
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;               */
+}
