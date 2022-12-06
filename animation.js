@@ -20,4 +20,5 @@ function generate() {
     },
   });
   //   window.requestAnimationFrame(generate);
+  // step 2, remaining 4
 }
